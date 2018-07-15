@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA255DC120F9C638000F8D5D /* prepare.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA255DC020F9C638000F8D5D /* prepare.wav */; };
+		AA255DC520F9C9F1000F8D5D /* gong_end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA255DC420F9C9F1000F8D5D /* gong_end.mp3 */; };
+		AA255DC720F9CAC3000F8D5D /* gong.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA255DC620F9CAC3000F8D5D /* gong.wav */; };
+		AA255DCD20F9CF48000F8D5D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA255DCC20F9CF48000F8D5D /* Extension.swift */; };
 		AADD96DC20C594A500D818AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD96DB20C594A500D818AA /* AppDelegate.swift */; };
-		AADD96DE20C594A500D818AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD96DD20C594A500D818AA /* ViewController.swift */; };
 		AADD96E120C594A500D818AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADD96DF20C594A500D818AA /* Main.storyboard */; };
 		AADD96E420C594A500D818AA /* Boxer_Timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AADD96E220C594A500D818AA /* Boxer_Timer.xcdatamodeld */; };
 		AADD96E620C594A700D818AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADD96E520C594A700D818AA /* Assets.xcassets */; };
 		AADD96E920C594A700D818AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADD96E720C594A700D818AA /* LaunchScreen.storyboard */; };
+		AADD96F120C59CB300D818AA /* PreparingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD96F020C59CB300D818AA /* PreparingVC.swift */; };
+		AADD96F420C5AE8900D818AA /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD96F320C5AE8900D818AA /* TimerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA255DC020F9C638000F8D5D /* prepare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = prepare.wav; sourceTree = "<group>"; };
+		AA255DC420F9C9F1000F8D5D /* gong_end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong_end.mp3; sourceTree = "<group>"; };
+		AA255DC620F9CAC3000F8D5D /* gong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong.wav; sourceTree = "<group>"; };
+		AA255DCC20F9CF48000F8D5D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		AADD96D820C594A500D818AA /* Boxer Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boxer Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADD96DB20C594A500D818AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AADD96DD20C594A500D818AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AADD96E020C594A500D818AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AADD96E320C594A500D818AA /* Boxer_Timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Boxer_Timer.xcdatamodel; sourceTree = "<group>"; };
 		AADD96E520C594A700D818AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADD96E820C594A700D818AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AADD96EA20C594A700D818AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AADD96F020C59CB300D818AA /* PreparingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingVC.swift; sourceTree = "<group>"; };
+		AADD96F320C5AE8900D818AA /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA255DC820F9CDFF000F8D5D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				AADD96E220C594A500D818AA /* Boxer_Timer.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		AA255DC920F9CED2000F8D5D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AADD96DF20C594A500D818AA /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		AA255DCA20F9CEDE000F8D5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AADD96E520C594A700D818AA /* Assets.xcassets */,
+				AADD96DB20C594A500D818AA /* AppDelegate.swift */,
+				AA255DCC20F9CF48000F8D5D /* Extension.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AA255DCB20F9CEF1000F8D5D /* Launchscreen */ = {
+			isa = PBXGroup;
+			children = (
+				AADD96E720C594A700D818AA /* LaunchScreen.storyboard */,
+			);
+			path = Launchscreen;
+			sourceTree = "<group>";
+		};
 		AADD96CF20C594A500D818AA = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +100,34 @@
 		AADD96DA20C594A500D818AA /* Boxer Timer */ = {
 			isa = PBXGroup;
 			children = (
-				AADD96DB20C594A500D818AA /* AppDelegate.swift */,
-				AADD96DD20C594A500D818AA /* ViewController.swift */,
-				AADD96DF20C594A500D818AA /* Main.storyboard */,
-				AADD96E520C594A700D818AA /* Assets.xcassets */,
-				AADD96E720C594A700D818AA /* LaunchScreen.storyboard */,
+				AA255DCB20F9CEF1000F8D5D /* Launchscreen */,
+				AA255DCA20F9CEDE000F8D5D /* Main */,
+				AA255DC920F9CED2000F8D5D /* Storyboard */,
+				AA255DC820F9CDFF000F8D5D /* Database */,
+				AADD96F520CAF6ED00D818AA /* Sound */,
+				AADD96F220C59CB700D818AA /* Controllers */,
 				AADD96EA20C594A700D818AA /* Info.plist */,
-				AADD96E220C594A500D818AA /* Boxer_Timer.xcdatamodeld */,
 			);
 			path = "Boxer Timer";
+			sourceTree = "<group>";
+		};
+		AADD96F220C59CB700D818AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AADD96F020C59CB300D818AA /* PreparingVC.swift */,
+				AADD96F320C5AE8900D818AA /* TimerVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AADD96F520CAF6ED00D818AA /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				AA255DC620F9CAC3000F8D5D /* gong.wav */,
+				AA255DC420F9C9F1000F8D5D /* gong_end.mp3 */,
+				AA255DC020F9C638000F8D5D /* prepare.wav */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +188,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA255DC120F9C638000F8D5D /* prepare.wav in Resources */,
 				AADD96E920C594A700D818AA /* LaunchScreen.storyboard in Resources */,
 				AADD96E620C594A700D818AA /* Assets.xcassets in Resources */,
+				AA255DC720F9CAC3000F8D5D /* gong.wav in Resources */,
+				AA255DC520F9C9F1000F8D5D /* gong_end.mp3 in Resources */,
 				AADD96E120C594A500D818AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AADD96DE20C594A500D818AA /* ViewController.swift in Sources */,
+				AA255DCD20F9CF48000F8D5D /* Extension.swift in Sources */,
+				AADD96F420C5AE8900D818AA /* TimerVC.swift in Sources */,
+				AADD96F120C59CB300D818AA /* PreparingVC.swift in Sources */,
 				AADD96E420C594A500D818AA /* Boxer_Timer.xcdatamodeld in Sources */,
 				AADD96DC20C594A500D818AA /* AppDelegate.swift in Sources */,
 			);
@@ -287,14 +355,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J4TANDD7J;
 				INFOPLIST_FILE = "Boxer Timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.marat..Boxer-Timer";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.marat.boxertimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,14 +374,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J4TANDD7J;
 				INFOPLIST_FILE = "Boxer Timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.marat..Boxer-Timer";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.marat.boxertimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
