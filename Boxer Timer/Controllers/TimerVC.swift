@@ -48,7 +48,7 @@ class TimerVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        activateProximitySensor()
         setAudioPlayer()
         setTimerBegining()
         countTime()
@@ -95,6 +95,7 @@ class TimerVC: UIViewController {
     @IBAction func btnStartClicked(_ sender: Any) {
         changeHiddenButtons(timerStarted: false)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(TimerVC.checkDelays)), userInfo: nil, repeats: true)
+        isTimerStarted = true
         
     }
     
@@ -228,6 +229,37 @@ class TimerVC: UIViewController {
         self.timer.invalidate()
         self.isTimerStarted = false
     }
+    
+    
+    private func activateProximitySensor() {
+        let device = UIDevice.current
+        device.isProximityMonitoringEnabled = true
+        if device.isProximityMonitoringEnabled {
+            NotificationCenter.default.addObserver(self, selector: #selector (self.proximityChanged (_:)), name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device)
+        }
+    }
+    
+    @objc func proximityChanged(_ notification: NSNotification) {
+        if let device = notification.object as? UIDevice {
+            if (device.proximityState) {
+                changeTimerStatus()
+            }
+        }
+    }
+    
+    
+    private func changeTimerStatus() {
+        if (isTimerStarted) {
+            changeHiddenButtons(timerStarted: true)
+            timer.invalidate()
+            isTimerStarted = false
+        } else {
+            changeHiddenButtons(timerStarted: false)
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(TimerVC.checkDelays)), userInfo: nil, repeats: true)
+            isTimerStarted = true
+        }
+    }
+    
     
 
 }

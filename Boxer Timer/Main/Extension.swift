@@ -30,12 +30,13 @@ import Foundation
 //    static var webView:WKWebView = WKWebView()
 //}
 
-//struct defaultsKeys {
-//    static let authToken     = "UniParkAuthToken"
-//    static let userId        = "UniParkuserID"
-//    static let appType       = "UniParkAppType"
-//    static let GoogleMapsKey = "AIzaSyB-Q4drkXQlrZPeUCLlIcXnOBk14pBolM4"
-//}
+struct TimerKeys {
+    static let roundTime   = "roundTime"
+    static let pauseTime   = "pauseTime"
+    static let prepareTime = "prepareTime"
+    static let roundCount  = "roundCount"
+    static let alertTime   = "alertTime"
+}
 //
 //class User {
 //

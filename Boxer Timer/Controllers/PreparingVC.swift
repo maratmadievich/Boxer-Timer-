@@ -16,6 +16,13 @@ class PreparingVC: UIViewController {
     @IBOutlet weak var labelRoundCount: UILabel!
     @IBOutlet weak var labelAlertTime: UILabel!
     
+    @IBOutlet weak var btnBox: UIButton!
+    @IBOutlet weak var btnMma: UIButton!
+    @IBOutlet weak var btnMy: UIButton!
+    
+    
+    let defaults = UserDefaults.standard
+    
     var roundTime = 180
     var pauseTime = 60
     var prepareTime = 15
@@ -28,9 +35,46 @@ class PreparingVC: UIViewController {
     let valueRoundCount = 4
     let valueAlertTime = 5
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        getSavedTimer()
         preparingTimers()
+        resizeButtonImages()
+    }
+    
+    
+    private func getSavedTimer() {
+        
+        if let _roundTime = defaults.string(forKey: TimerKeys.roundTime) {
+            roundTime = Int(_roundTime)!
+        } else {
+            defaults.setValue("\(roundTime)", forKey: TimerKeys.roundTime)
+        }
+        
+        if let _pauseTime = defaults.string(forKey: TimerKeys.pauseTime) {
+            pauseTime = Int(_pauseTime)!
+        } else {
+            defaults.setValue("\(pauseTime)", forKey: TimerKeys.pauseTime)
+        }
+        
+        if let _prepareTime = defaults.string(forKey: TimerKeys.prepareTime) {
+            prepareTime = Int(_prepareTime)!
+        } else {
+            defaults.setValue("\(prepareTime)", forKey: TimerKeys.prepareTime)
+        }
+        
+        if let _roundCount = defaults.string(forKey: TimerKeys.roundCount) {
+            roundCount = Int(_roundCount)!
+        } else {
+            defaults.setValue("\(roundCount)", forKey: TimerKeys.roundCount)
+        }
+        
+        if let _alertTime = defaults.string(forKey: TimerKeys.alertTime) {
+            alertTime = Int(_alertTime)!
+        } else {
+            defaults.setValue("\(alertTime)", forKey: TimerKeys.alertTime)
+        }
     }
     
     
@@ -41,6 +85,14 @@ class PreparingVC: UIViewController {
             i+=1
         }
     }
+    
+    
+    private func resizeButtonImages() {
+        btnBox.imageView?.contentMode = .scaleAspectFit
+        btnMma.imageView?.contentMode = .scaleAspectFit
+        btnMy.imageView?.contentMode = .scaleAspectFit
+    }
+    
     
     @IBAction func btnRoundAddClicked(_ sender: Any) {
         changeValue(type: valueRoundTime, isAdd: true)
@@ -89,6 +141,15 @@ class PreparingVC: UIViewController {
     
     @IBAction func btnStartClicked(_ sender: Any) {
         performSegue(withIdentifier: "showTimer", sender: nil)
+    }
+    
+    
+    @IBAction func btnSaveClicked(_ sender: Any) {
+        defaults.setValue("\(roundTime)", forKey: TimerKeys.roundTime)
+        defaults.setValue("\(pauseTime)", forKey: TimerKeys.pauseTime)
+        defaults.setValue("\(prepareTime)", forKey: TimerKeys.prepareTime)
+        defaults.setValue("\(roundCount)", forKey: TimerKeys.roundCount)
+        defaults.setValue("\(alertTime)", forKey: TimerKeys.alertTime)
     }
     
     
@@ -254,12 +315,22 @@ class PreparingVC: UIViewController {
     }
     
     
-    @IBAction func btnCrossfitClicked(_ sender: Any) {
-        roundTime = 90
-        pauseTime = 30
-        prepareTime = 10
-        roundCount = 10
-        alertTime = 10
+    @IBAction func btnMyClicked(_ sender: Any) {
+        if let _roundTime = defaults.string(forKey: TimerKeys.roundTime) {
+            roundTime = Int(_roundTime)!
+        }
+        if let _pauseTime = defaults.string(forKey: TimerKeys.pauseTime) {
+            pauseTime = Int(_pauseTime)!
+        }
+        if let _prepareTime = defaults.string(forKey: TimerKeys.prepareTime) {
+            prepareTime = Int(_prepareTime)!
+        }
+        if let _roundCount = defaults.string(forKey: TimerKeys.roundCount) {
+            roundCount = Int(_roundCount)!
+        }
+        if let _alertTime = defaults.string(forKey: TimerKeys.alertTime) {
+            alertTime = Int(_alertTime)!
+        }
         preparingTimers()
     }
     
