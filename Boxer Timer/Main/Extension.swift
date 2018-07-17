@@ -313,3 +313,20 @@ extension UIImage {
 }
 
 
+class CustomButton: UIButton {
+    override open var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? UIColor.white : UIColor.lightGray
+        }
+    }
+}
+
+class CustomTabButton: UIButton {
+    override open var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? UIColor.lightGray : UIColor.black
+        }
+    }
+}
+
+
