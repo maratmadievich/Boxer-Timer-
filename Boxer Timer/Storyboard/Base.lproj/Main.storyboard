@@ -634,7 +634,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlh-0i-8OD">
                                 <rect key="frame" x="158" y="244" width="60" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.4497614606" blue="0.30055931279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="UVX-cm-IcZ"/>
                                     <constraint firstAttribute="width" constant="60" id="XlB-xD-Fef"/>
@@ -642,9 +642,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="play"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.89685120559999998" green="0.40336910809999998" blue="0.269556982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
@@ -658,7 +655,7 @@
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0F-dW-cLg">
                                 <rect key="frame" x="93" y="244" width="60" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.4497614606" blue="0.30055931279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Fmk-J7-oic"/>
                                     <constraint firstAttribute="width" constant="60" id="bPH-Du-XG5"/>
@@ -666,9 +663,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="pause"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.89685120559999998" green="0.40336910809999998" blue="0.269556982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
@@ -682,7 +676,7 @@
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-7B-Vg9">
                                 <rect key="frame" x="222.5" y="244" width="60" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.4497614606" blue="0.30055931279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="pN0-B9-Vgc"/>
                                     <constraint firstAttribute="width" constant="60" id="xBp-b9-xk6"/>
@@ -690,9 +684,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="stop"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.89685120559999998" green="0.40336910809999998" blue="0.269556982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
@@ -769,12 +760,12 @@
     </scenes>
     <resources>
         <image name="box" width="200" height="200"/>
-        <image name="minus" width="48" height="48"/>
+        <image name="minus" width="64" height="64"/>
         <image name="mma" width="200" height="200"/>
-        <image name="pause" width="52" height="52"/>
+        <image name="pause" width="256" height="256"/>
         <image name="pers" width="512" height="512"/>
-        <image name="play" width="52" height="52"/>
-        <image name="plus" width="52" height="52"/>
-        <image name="stop" width="52" height="52"/>
+        <image name="play" width="256" height="256"/>
+        <image name="plus" width="64" height="64"/>
+        <image name="stop" width="256" height="256"/>
     </resources>
 </document>
