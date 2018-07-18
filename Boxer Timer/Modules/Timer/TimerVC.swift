@@ -21,11 +21,11 @@ class TimerVC: UIViewController {
     
     let device = UIDevice.current
     
-    private var roundTime = 0
-    private var pauseTime = 0
-    private var prepareTime = 0
-    private var roundCount = 0
-    private var alertTime = 0
+    private var roundTime   = GlobalConstants.roundTime
+    private var pauseTime   = GlobalConstants.pauseTime
+    private var prepareTime = GlobalConstants.prepareTime
+    private var roundCount  = GlobalConstants.roundCount
+    private var alertTime   = GlobalConstants.alertTime
     
     private var time = -1.0
     private var timer = Timer()
@@ -87,6 +87,7 @@ class TimerVC: UIViewController {
     
     
     func setTimerBegining() {
+        
         isPrepare = true
         isRound = false
         isPause = false
