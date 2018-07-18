@@ -19,6 +19,8 @@ class TimerVC: UIViewController {
     @IBOutlet weak var btnStop: UIButton!
     
     
+    let device = UIDevice.current
+    
     private var roundTime = 0
     private var pauseTime = 0
     private var prepareTime = 0
@@ -46,9 +48,19 @@ class TimerVC: UIViewController {
     private var soundID:SystemSoundID = 0
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        activateProximitySensor()
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        deactivateProximitySensor()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        activateProximitySensor()
+       
         setAudioPlayer()
         setTimerBegining()
         countTime()
@@ -232,12 +244,18 @@ class TimerVC: UIViewController {
     
     
     private func activateProximitySensor() {
-        let device = UIDevice.current
         device.isProximityMonitoringEnabled = true
         if device.isProximityMonitoringEnabled {
             NotificationCenter.default.addObserver(self, selector: #selector (self.proximityChanged (_:)), name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device)
         }
     }
+    
+    
+    private func deactivateProximitySensor() {
+        device.isProximityMonitoringEnabled = false
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device)
+    }
+    
     
     @objc func proximityChanged(_ notification: NSNotification) {
         if let device = notification.object as? UIDevice {
