@@ -12,23 +12,15 @@ import Foundation
 
 
 
-//struct GlobalConstants {
-//
-//    static let isDebugWork = true
-//
-//    static var mainAPI: String   = "https://api.unipark.kz/"
-//    static var APIver: String    = "v1/"
-//    static var photoURL: String  = ""
-//    static var user:User         = User()
-//    static var cityArray: [JSON] = []
-//    static var PUSHToken:String  = ""
-//
-//    static var needFastStart:Bool = false
-//    static var driverSelectedTab:UInt = 0
-//    static var header:HTTPHeaders = [:]
-//
-//    static var webView:WKWebView = WKWebView()
-//}
+struct GlobalConstants {
+    
+    static var roundTime   = 180
+    static var pauseTime   = 60
+    static var prepareTime = 15
+    static var roundCount  = 12
+    static var alertTime   = 10
+    
+}
 
 struct TimerKeys {
     static let roundTime   = "roundTime"

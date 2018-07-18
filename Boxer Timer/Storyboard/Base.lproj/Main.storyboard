@@ -13,7 +13,7 @@
         <!--Настройка-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PreparingVC" customModule="Boxer_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PreparingViewController" customModule="Boxer_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,13 +24,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj4-ww-PGu" userLabel="ViewRound">
                                         <rect key="frame" x="6" y="10" width="343" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время раунда" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-52-7cF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время раунда" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-52-7cF">
                                                 <rect key="frame" x="10" y="20.5" width="153" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-gM-8E2" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-gM-8E2" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
                                                 <rect key="frame" x="173" y="10" width="40" height="40"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -51,10 +51,10 @@
                                                     <action selector="btnRoundRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZH-fO-IYy"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg0-A6-j20">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg0-A6-j20">
                                                 <rect key="frame" x="223" y="20.5" width="60" height="20"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="1vc-f3-HEE"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="1vc-f3-HEE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,12 +86,12 @@
                                         <constraints>
                                             <constraint firstItem="PEU-52-7cF" firstAttribute="centerY" secondItem="yj4-ww-PGu" secondAttribute="centerY" id="2lf-Fx-qTa"/>
                                             <constraint firstItem="dNg-aV-uoh" firstAttribute="leading" secondItem="Jg0-A6-j20" secondAttribute="trailing" constant="10" id="AEC-29-3A8"/>
+                                            <constraint firstItem="Li8-gM-8E2" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="CDN-Ts-xSy"/>
                                             <constraint firstItem="PEU-52-7cF" firstAttribute="leading" secondItem="yj4-ww-PGu" secondAttribute="leading" constant="10" id="Ejt-2R-JYl"/>
                                             <constraint firstAttribute="trailing" secondItem="dNg-aV-uoh" secondAttribute="trailing" constant="10" id="IeA-Sc-BFC"/>
-                                            <constraint firstItem="Jg0-A6-j20" firstAttribute="centerY" secondItem="yj4-ww-PGu" secondAttribute="centerY" id="MBB-bD-NiL"/>
-                                            <constraint firstItem="dNg-aV-uoh" firstAttribute="centerY" secondItem="yj4-ww-PGu" secondAttribute="centerY" id="SL3-eL-FuH"/>
                                             <constraint firstItem="Jg0-A6-j20" firstAttribute="leading" secondItem="Li8-gM-8E2" secondAttribute="trailing" constant="10" id="Tmd-Of-8El"/>
-                                            <constraint firstItem="Li8-gM-8E2" firstAttribute="centerY" secondItem="yj4-ww-PGu" secondAttribute="centerY" id="Wj0-bk-25c"/>
+                                            <constraint firstItem="Jg0-A6-j20" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="Upz-gw-A11"/>
+                                            <constraint firstItem="dNg-aV-uoh" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="WFu-Bm-e8n"/>
                                             <constraint firstItem="Li8-gM-8E2" firstAttribute="leading" secondItem="PEU-52-7cF" secondAttribute="trailing" constant="10" id="qdJ-EG-SJg"/>
                                             <constraint firstAttribute="height" constant="60" id="w1l-ff-sFy"/>
                                         </constraints>
@@ -99,13 +99,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQr-c2-pBH" userLabel="ViewPause">
                                         <rect key="frame" x="6" y="80" width="343" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время отдыха" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKJ-f2-Ozo">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время отдыха" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKJ-f2-Ozo">
                                                 <rect key="frame" x="10" y="20.5" width="153" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-9N-RUl" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-9N-RUl" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
                                                 <rect key="frame" x="173" y="10" width="40" height="40"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -126,10 +126,10 @@
                                                     <action selector="btnPauseRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epC-61-A0q"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO3-Ny-j2g">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO3-Ny-j2g">
                                                 <rect key="frame" x="223" y="20.5" width="60" height="20"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="mXu-cO-Qad"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="mXu-cO-Qad"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -174,13 +174,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0L-RF-nh5" userLabel="ViewPrepare">
                                         <rect key="frame" x="6" y="150" width="343" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время подготовки" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAR-6x-R7P">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время подготовки" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAR-6x-R7P">
                                                 <rect key="frame" x="10" y="10" width="153" height="41"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pd-9o-c00" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pd-9o-c00" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
                                                 <rect key="frame" x="173" y="10" width="40" height="40"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -201,10 +201,10 @@
                                                     <action selector="btnPrepareRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqm-rj-7bt"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfr-kb-bb5">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfr-kb-bb5">
                                                 <rect key="frame" x="223" y="20.5" width="60" height="20"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="qqa-aA-pNb"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="qqa-aA-pNb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -249,13 +249,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-XP-hO0" userLabel="ViewCount">
                                         <rect key="frame" x="6" y="220" width="343" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество раундов" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="en4-Ja-8ZY">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Количество раундов" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="en4-Ja-8ZY">
                                                 <rect key="frame" x="10" y="9.5" width="153" height="41"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUS-00-di2" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUS-00-di2" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
                                                 <rect key="frame" x="173" y="10" width="40" height="40"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -276,10 +276,10 @@
                                                     <action selector="btnCountRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQS-yH-63h"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olY-Lk-XQN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olY-Lk-XQN">
                                                 <rect key="frame" x="223" y="20.5" width="60" height="20"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="lpz-hY-DaG"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="lpz-hY-DaG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -324,13 +324,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puw-zm-bca" userLabel="ViewAlert">
                                         <rect key="frame" x="6" y="290" width="343" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доп. сигнал" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRy-R2-11K">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Доп. сигнал" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRy-R2-11K">
                                                 <rect key="frame" x="10" y="20.5" width="153" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcx-YH-t1n" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcx-YH-t1n" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
                                                 <rect key="frame" x="173" y="10" width="40" height="40"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -351,10 +351,10 @@
                                                     <action selector="btnAlertRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nk-cA-diB"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-6W-xie">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-6W-xie">
                                                 <rect key="frame" x="223" y="20.5" width="60" height="20"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="KJj-50-tP7"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="KJj-50-tP7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

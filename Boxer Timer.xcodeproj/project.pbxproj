@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8444B80020FF05BA008BEE00 /* PreparingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B7FF20FF05BA008BEE00 /* PreparingPresenter.swift */; };
+		8444B80220FF05C7008BEE00 /* PreparingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B80120FF05C7008BEE00 /* PreparingInteractor.swift */; };
+		8444B80420FF05D6008BEE00 /* PreparingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B80320FF05D6008BEE00 /* PreparingConfigurator.swift */; };
+		8444B80620FF05E3008BEE00 /* PreparingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B80520FF05E3008BEE00 /* PreparingRouter.swift */; };
+		8444B80820FF05F0008BEE00 /* PreparingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B80720FF05F0008BEE00 /* PreparingProtocol.swift */; };
+		8444B80B20FF31FE008BEE00 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B80A20FF31FE008BEE00 /* StorageService.swift */; };
 		AA255DC120F9C638000F8D5D /* prepare.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA255DC020F9C638000F8D5D /* prepare.wav */; };
 		AA255DC520F9C9F1000F8D5D /* gong_end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA255DC420F9C9F1000F8D5D /* gong_end.mp3 */; };
 		AA255DC720F9CAC3000F8D5D /* gong.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA255DC620F9CAC3000F8D5D /* gong.wav */; };
@@ -16,11 +22,17 @@
 		AADD96E420C594A500D818AA /* Boxer_Timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AADD96E220C594A500D818AA /* Boxer_Timer.xcdatamodeld */; };
 		AADD96E620C594A700D818AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADD96E520C594A700D818AA /* Assets.xcassets */; };
 		AADD96E920C594A700D818AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADD96E720C594A700D818AA /* LaunchScreen.storyboard */; };
-		AADD96F120C59CB300D818AA /* PreparingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD96F020C59CB300D818AA /* PreparingVC.swift */; };
+		AADD96F120C59CB300D818AA /* PreparingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD96F020C59CB300D818AA /* PreparingViewController.swift */; };
 		AADD96F420C5AE8900D818AA /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD96F320C5AE8900D818AA /* TimerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8444B7FF20FF05BA008BEE00 /* PreparingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingPresenter.swift; sourceTree = "<group>"; };
+		8444B80120FF05C7008BEE00 /* PreparingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingInteractor.swift; sourceTree = "<group>"; };
+		8444B80320FF05D6008BEE00 /* PreparingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingConfigurator.swift; sourceTree = "<group>"; };
+		8444B80520FF05E3008BEE00 /* PreparingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingRouter.swift; sourceTree = "<group>"; };
+		8444B80720FF05F0008BEE00 /* PreparingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingProtocol.swift; sourceTree = "<group>"; };
+		8444B80A20FF31FE008BEE00 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		AA255DC020F9C638000F8D5D /* prepare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = prepare.wav; sourceTree = "<group>"; };
 		AA255DC420F9C9F1000F8D5D /* gong_end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong_end.mp3; sourceTree = "<group>"; };
 		AA255DC620F9CAC3000F8D5D /* gong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong.wav; sourceTree = "<group>"; };
@@ -32,7 +44,7 @@
 		AADD96E520C594A700D818AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADD96E820C594A700D818AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AADD96EA20C594A700D818AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AADD96F020C59CB300D818AA /* PreparingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingVC.swift; sourceTree = "<group>"; };
+		AADD96F020C59CB300D818AA /* PreparingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingViewController.swift; sourceTree = "<group>"; };
 		AADD96F320C5AE8900D818AA /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +59,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8444B7FC20FF055A008BEE00 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8444B7FD20FF0578008BEE00 /* Presenter */,
+				8444B7FE20FF0586008BEE00 /* Timer */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8444B7FD20FF0578008BEE00 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AADD96F020C59CB300D818AA /* PreparingViewController.swift */,
+				8444B7FF20FF05BA008BEE00 /* PreparingPresenter.swift */,
+				8444B80120FF05C7008BEE00 /* PreparingInteractor.swift */,
+				8444B80320FF05D6008BEE00 /* PreparingConfigurator.swift */,
+				8444B80520FF05E3008BEE00 /* PreparingRouter.swift */,
+				8444B80720FF05F0008BEE00 /* PreparingProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8444B7FE20FF0586008BEE00 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				AADD96F320C5AE8900D818AA /* TimerVC.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		8444B80920FF31BA008BEE00 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8444B80A20FF31FE008BEE00 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		AA255DC820F9CDFF000F8D5D /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +150,8 @@
 		AADD96DA20C594A500D818AA /* Boxer Timer */ = {
 			isa = PBXGroup;
 			children = (
+				8444B7FC20FF055A008BEE00 /* Modules */,
+				8444B80920FF31BA008BEE00 /* Services */,
 				AA255DCB20F9CEF1000F8D5D /* Launchscreen */,
 				AA255DCA20F9CEDE000F8D5D /* Main */,
 				AA255DC920F9CED2000F8D5D /* Storyboard */,
@@ -114,8 +166,6 @@
 		AADD96F220C59CB700D818AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AADD96F020C59CB300D818AA /* PreparingVC.swift */,
-				AADD96F320C5AE8900D818AA /* TimerVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -205,9 +255,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA255DCD20F9CF48000F8D5D /* Extension.swift in Sources */,
+				8444B80420FF05D6008BEE00 /* PreparingConfigurator.swift in Sources */,
+				8444B80220FF05C7008BEE00 /* PreparingInteractor.swift in Sources */,
+				8444B80020FF05BA008BEE00 /* PreparingPresenter.swift in Sources */,
+				8444B80820FF05F0008BEE00 /* PreparingProtocol.swift in Sources */,
 				AADD96F420C5AE8900D818AA /* TimerVC.swift in Sources */,
-				AADD96F120C59CB300D818AA /* PreparingVC.swift in Sources */,
+				8444B80620FF05E3008BEE00 /* PreparingRouter.swift in Sources */,
+				AADD96F120C59CB300D818AA /* PreparingViewController.swift in Sources */,
 				AADD96E420C594A500D818AA /* Boxer_Timer.xcdatamodeld in Sources */,
+				8444B80B20FF31FE008BEE00 /* StorageService.swift in Sources */,
 				AADD96DC20C594A500D818AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
