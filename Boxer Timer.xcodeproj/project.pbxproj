@@ -12,6 +12,7 @@
 		843B941B21019FC500A49DF8 /* TimerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B941A21019FC500A49DF8 /* TimerConfigurator.swift */; };
 		843B941D21019FD300A49DF8 /* TimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B941C21019FD300A49DF8 /* TimerRouter.swift */; };
 		843B941F21019FEB00A49DF8 /* TimerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B941E21019FEB00A49DF8 /* TimerProtocol.swift */; };
+		843B94212101DFAE00A49DF8 /* IcoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B94202101DFAE00A49DF8 /* IcoViewController.swift */; };
 		8444B80020FF05BA008BEE00 /* PreparingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B7FF20FF05BA008BEE00 /* PreparingPresenter.swift */; };
 		8444B80220FF05C7008BEE00 /* PreparingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B80120FF05C7008BEE00 /* PreparingInteractor.swift */; };
 		8444B80420FF05D6008BEE00 /* PreparingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B80320FF05D6008BEE00 /* PreparingConfigurator.swift */; };
@@ -37,6 +38,7 @@
 		843B941A21019FC500A49DF8 /* TimerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerConfigurator.swift; sourceTree = "<group>"; };
 		843B941C21019FD300A49DF8 /* TimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRouter.swift; sourceTree = "<group>"; };
 		843B941E21019FEB00A49DF8 /* TimerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProtocol.swift; sourceTree = "<group>"; };
+		843B94202101DFAE00A49DF8 /* IcoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcoViewController.swift; sourceTree = "<group>"; };
 		8444B7FF20FF05BA008BEE00 /* PreparingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingPresenter.swift; sourceTree = "<group>"; };
 		8444B80120FF05C7008BEE00 /* PreparingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingInteractor.swift; sourceTree = "<group>"; };
 		8444B80320FF05D6008BEE00 /* PreparingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingConfigurator.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				8444B7FD20FF0578008BEE00 /* Presenter */,
 				8444B7FE20FF0586008BEE00 /* Timer */,
+				843B94202101DFAE00A49DF8 /* IcoViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				843B941D21019FD300A49DF8 /* TimerRouter.swift in Sources */,
 				8444B80420FF05D6008BEE00 /* PreparingConfigurator.swift in Sources */,
 				843B941B21019FC500A49DF8 /* TimerConfigurator.swift in Sources */,
+				843B94212101DFAE00A49DF8 /* IcoViewController.swift in Sources */,
 				843B941921019FB900A49DF8 /* TimerInteractor.swift in Sources */,
 				8444B80220FF05C7008BEE00 /* PreparingInteractor.swift in Sources */,
 				8444B80020FF05BA008BEE00 /* PreparingPresenter.swift in Sources */,
