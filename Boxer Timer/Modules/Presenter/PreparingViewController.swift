@@ -33,11 +33,12 @@ class PreparingViewController: UIViewController {
     }
     
     
-    private func resizeButtonImages() {
+    func resizeButtonImages() {
         btnBox.imageView?.contentMode = .scaleAspectFit
         btnMma.imageView?.contentMode = .scaleAspectFit
         btnMy.imageView?.contentMode = .scaleAspectFit
     }
+    
     
     
     @IBAction func btnRoundAddClicked(_ sender: Any) {

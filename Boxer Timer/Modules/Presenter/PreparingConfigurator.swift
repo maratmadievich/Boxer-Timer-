@@ -11,6 +11,7 @@ import Foundation
 class PreparingConfigurator: PreparingConfiguratorProtocol {
     
     func configure(with viewController: PreparingViewController) {
+        
         let presenter = PreparingPresenter(view: viewController)
         let interactor = PreparingInteractor(presenter: presenter)
         let router = PreparingRouter(viewController: viewController)

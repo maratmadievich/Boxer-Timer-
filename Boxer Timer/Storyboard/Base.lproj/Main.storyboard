@@ -583,7 +583,7 @@
         <!--Таймер-->
         <scene sceneID="aGB-X6-tBv">
             <objects>
-                <viewController id="5Uh-cF-NIk" customClass="TimerVC" customModule="Boxer_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Uh-cF-NIk" customClass="TimerViewController" customModule="Boxer_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3kx-jq-0Zt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

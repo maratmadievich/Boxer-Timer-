@@ -21,6 +21,9 @@ class PreparingPresenter: PreparingPresenterProtocol {
     }
     
     
+    
+    
+    
     func getSavedTimer() {
         interactor.getSavedTimer()
     }
