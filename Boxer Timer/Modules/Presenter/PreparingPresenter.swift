@@ -21,9 +21,6 @@ class PreparingPresenter: PreparingPresenterProtocol {
     }
     
     
-    
-    
-    
     func getSavedTimer() {
         interactor.getSavedTimer()
     }
@@ -81,6 +78,11 @@ class PreparingPresenter: PreparingPresenterProtocol {
     
     func showAlert(time: String) {
         view.setAlert(time: time)
+    }
+    
+    
+    func showInfoView() {
+        view.showInfoView()
     }
     
     

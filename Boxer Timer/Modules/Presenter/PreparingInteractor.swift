@@ -28,6 +28,7 @@ class PreparingInteractor: PreparingInteractorProtocol {
     
     func saveTimer() {
         storageService.setStorageTimer()
+        presenter.showInfoView()
     }
     
     private func showAllValues() {

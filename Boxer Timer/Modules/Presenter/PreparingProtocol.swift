@@ -15,7 +15,7 @@ protocol PreparingViewProtocol: class {
     func setPrepare(time:String)
     func setRound(count:String)
     func setAlert(time:String)
-    
+    func showInfoView()
 }
 
 protocol PreparingPresenterProtocol: class {
@@ -27,6 +27,7 @@ protocol PreparingPresenterProtocol: class {
     
     func showBoxTimer()
     func showMmaTimer()
+    func showInfoView()
     
     func btnRoundClicked(with time: Int)
     func btnPauseClicked(with time: Int)

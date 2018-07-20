@@ -20,6 +20,7 @@ class PreparingViewController: UIViewController {
     @IBOutlet weak var btnMma: UIButton!
     @IBOutlet weak var btnMy: UIButton!
     
+    @IBOutlet weak var viewInfo: UIView!
     
     var presenter: PreparingPresenterProtocol!
     let configurator: PreparingConfiguratorProtocol = PreparingConfigurator()
@@ -137,6 +138,19 @@ class PreparingViewController: UIViewController {
     func setAlert(time:String) {
         DispatchQueue.main.async {
              self.labelAlertTime.text = time
+        }
+    }
+    
+    
+    func showInfoView() {
+       self.viewInfo.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            UIView.animate(withDuration: 1, animations: {
+                self.viewInfo.alpha = 0
+            }, completion: { (finished: Bool) in
+                self.viewInfo.isHidden = true
+                self.viewInfo.alpha = 1
+            })
         }
     }
     

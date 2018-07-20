@@ -453,6 +453,30 @@
                                     <constraint firstItem="CIy-3E-5fV" firstAttribute="centerX" secondItem="yWY-wD-ZtN" secondAttribute="centerX" multiplier="3:2" id="v3z-N3-7CB"/>
                                 </constraints>
                             </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YsQ-UB-iEq" userLabel="ViewInfo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Данные успешно сохранены" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH7-lI-lm8">
+                                        <rect key="frame" x="10" y="10" width="355" height="40"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3eX-oz-iMC"/>
+                                    <constraint firstAttribute="trailing" secondItem="IH7-lI-lm8" secondAttribute="trailing" constant="10" id="HWO-Fc-gfI"/>
+                                    <constraint firstItem="IH7-lI-lm8" firstAttribute="leading" secondItem="YsQ-UB-iEq" secondAttribute="leading" constant="10" id="eK0-lS-TTP"/>
+                                    <constraint firstAttribute="bottom" secondItem="IH7-lI-lm8" secondAttribute="bottom" constant="10" id="fK2-Qd-8ll"/>
+                                    <constraint firstItem="IH7-lI-lm8" firstAttribute="top" secondItem="YsQ-UB-iEq" secondAttribute="top" constant="10" id="ltB-6i-myM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EI-ci-pjX" userLabel="ViewTypeTimer">
                                 <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <subviews>
@@ -544,10 +568,13 @@
                             <constraint firstItem="0bt-XP-hO0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3nw-AB-SJc"/>
                             <constraint firstItem="yWY-wD-ZtN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="CLw-cO-ORu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5EI-ci-pjX" secondAttribute="trailing" id="Czh-Aa-hts"/>
+                            <constraint firstItem="YsQ-UB-iEq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DG0-ka-1Mm"/>
                             <constraint firstItem="yWY-wD-ZtN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="DkA-dE-YTS"/>
                             <constraint firstItem="RpT-hy-wlB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HEV-cr-jMn"/>
+                            <constraint firstItem="YsQ-UB-iEq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HY8-SU-lBM"/>
                             <constraint firstItem="puw-zm-bca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JEE-dY-YNB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0bt-XP-hO0" secondAttribute="trailing" constant="16" id="QZn-Mv-9gb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YsQ-UB-iEq" secondAttribute="trailing" id="XEQ-dT-DZX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TQr-c2-pBH" secondAttribute="trailing" constant="16" id="ZUr-20-lwS"/>
                             <constraint firstItem="TQr-c2-pBH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bRa-8H-IVA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yWY-wD-ZtN" secondAttribute="trailing" constant="10" id="eP9-Ie-fcc"/>
@@ -573,6 +600,7 @@
                         <outlet property="labelPrepareTime" destination="tfr-kb-bb5" id="Sac-hc-7eA"/>
                         <outlet property="labelRoundCount" destination="olY-Lk-XQN" id="8iw-br-bhR"/>
                         <outlet property="labelRoundTime" destination="Jg0-A6-j20" id="heb-nL-r99"/>
+                        <outlet property="viewInfo" destination="YsQ-UB-iEq" id="GmE-ah-qIc"/>
                         <segue destination="5Uh-cF-NIk" kind="show" identifier="showTimer" id="Rki-aM-DWI"/>
                     </connections>
                 </viewController>
