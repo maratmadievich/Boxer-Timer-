@@ -311,6 +311,16 @@ class CustomButton: UIButton {
             backgroundColor = isHighlighted ? UIColor.white : UIColor.lightGray
         }
     }
+    
+    func animateClick() {
+        UIView.animate(withDuration: 0.02, animations: {
+            self.alpha = 0.5
+        }, completion: { (finished: Bool) in
+            UIView.animate(withDuration: 0.02, animations: {
+                self.alpha = 1
+            }, completion: nil)
+        })
+    }
 }
 
 class CustomTabButton: UIButton {

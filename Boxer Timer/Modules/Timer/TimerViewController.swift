@@ -86,6 +86,10 @@ class TimerViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func btnTouchClicked(_ sender: CustomButton) {
+        sender.animateClick()
+    }
+    
     
     //Не используется, тк audioPlayer тупо громче
     //        prepareAudio()

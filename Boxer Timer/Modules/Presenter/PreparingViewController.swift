@@ -155,6 +155,12 @@ class PreparingViewController: UIViewController {
     }
     
     
+    @IBAction func btnTouchClicked(_ sender: CustomButton) {
+        sender.animateClick()
+    }
+    
+    
+    
     
 }
 

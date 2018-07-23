@@ -21,158 +21,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWY-wD-ZtN">
                                 <rect key="frame" x="10" y="32" width="355" height="667"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj4-ww-PGu" userLabel="ViewRound">
-                                        <rect key="frame" x="6" y="10" width="343" height="60"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время раунда" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-52-7cF">
-                                                <rect key="frame" x="10" y="20.5" width="153" height="20.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-gM-8E2" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
-                                                <rect key="frame" x="173" y="10" width="40" height="40"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="Vht-At-Ept"/>
-                                                    <constraint firstAttribute="height" constant="40" id="mII-N6-9m6"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="minus"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="btnRoundRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZH-fO-IYy"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg0-A6-j20">
-                                                <rect key="frame" x="223" y="20.5" width="60" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="1vc-f3-HEE"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNg-aV-uoh" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
-                                                <rect key="frame" x="293" y="10" width="40" height="40"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="r2f-uC-G4N"/>
-                                                    <constraint firstAttribute="height" constant="40" id="xWx-F6-13g"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="plus"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="btnRoundAddClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0i-df-Uz4"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="PEU-52-7cF" firstAttribute="centerY" secondItem="yj4-ww-PGu" secondAttribute="centerY" id="2lf-Fx-qTa"/>
-                                            <constraint firstItem="dNg-aV-uoh" firstAttribute="leading" secondItem="Jg0-A6-j20" secondAttribute="trailing" constant="10" id="AEC-29-3A8"/>
-                                            <constraint firstItem="Li8-gM-8E2" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="CDN-Ts-xSy"/>
-                                            <constraint firstItem="PEU-52-7cF" firstAttribute="leading" secondItem="yj4-ww-PGu" secondAttribute="leading" constant="10" id="Ejt-2R-JYl"/>
-                                            <constraint firstAttribute="trailing" secondItem="dNg-aV-uoh" secondAttribute="trailing" constant="10" id="IeA-Sc-BFC"/>
-                                            <constraint firstItem="Jg0-A6-j20" firstAttribute="leading" secondItem="Li8-gM-8E2" secondAttribute="trailing" constant="10" id="Tmd-Of-8El"/>
-                                            <constraint firstItem="Jg0-A6-j20" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="Upz-gw-A11"/>
-                                            <constraint firstItem="dNg-aV-uoh" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="WFu-Bm-e8n"/>
-                                            <constraint firstItem="Li8-gM-8E2" firstAttribute="leading" secondItem="PEU-52-7cF" secondAttribute="trailing" constant="10" id="qdJ-EG-SJg"/>
-                                            <constraint firstAttribute="height" constant="60" id="w1l-ff-sFy"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQr-c2-pBH" userLabel="ViewPause">
-                                        <rect key="frame" x="6" y="80" width="343" height="60"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время отдыха" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKJ-f2-Ozo">
-                                                <rect key="frame" x="10" y="20.5" width="153" height="20.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-9N-RUl" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
-                                                <rect key="frame" x="173" y="10" width="40" height="40"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="Rh3-LN-M4w"/>
-                                                    <constraint firstAttribute="height" constant="40" id="a9P-1G-qqO"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="-" image="minus"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="btnPauseRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epC-61-A0q"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO3-Ny-j2g">
-                                                <rect key="frame" x="223" y="20.5" width="60" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="mXu-cO-Qad"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dw-Gr-VOh" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
-                                                <rect key="frame" x="293" y="10" width="40" height="40"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="EuS-K6-mIR"/>
-                                                    <constraint firstAttribute="height" constant="40" id="Yo0-T6-9JN"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="+" image="plus"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="btnPauseAddClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXl-7O-6TF"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="2Dw-Gr-VOh" firstAttribute="leading" secondItem="lO3-Ny-j2g" secondAttribute="trailing" constant="10" id="1W3-Cf-32X"/>
-                                            <constraint firstItem="lO3-Ny-j2g" firstAttribute="centerY" secondItem="TQr-c2-pBH" secondAttribute="centerY" id="DLN-jy-p1i"/>
-                                            <constraint firstItem="NQ6-9N-RUl" firstAttribute="leading" secondItem="mKJ-f2-Ozo" secondAttribute="trailing" constant="10" id="GBX-af-aZP"/>
-                                            <constraint firstItem="mKJ-f2-Ozo" firstAttribute="centerY" secondItem="TQr-c2-pBH" secondAttribute="centerY" id="Gda-yI-E7Q"/>
-                                            <constraint firstItem="lO3-Ny-j2g" firstAttribute="leading" secondItem="NQ6-9N-RUl" secondAttribute="trailing" constant="10" id="JwQ-5O-zkN"/>
-                                            <constraint firstItem="NQ6-9N-RUl" firstAttribute="centerY" secondItem="TQr-c2-pBH" secondAttribute="centerY" id="U2g-f8-H7z"/>
-                                            <constraint firstAttribute="height" constant="60" id="iI1-yC-bZ1"/>
-                                            <constraint firstItem="mKJ-f2-Ozo" firstAttribute="leading" secondItem="TQr-c2-pBH" secondAttribute="leading" constant="10" id="spE-sL-RB4"/>
-                                            <constraint firstItem="2Dw-Gr-VOh" firstAttribute="centerY" secondItem="TQr-c2-pBH" secondAttribute="centerY" id="uhP-5Q-jPr"/>
-                                            <constraint firstAttribute="trailing" secondItem="2Dw-Gr-VOh" secondAttribute="trailing" constant="10" id="vbf-8e-Jxm"/>
-                                        </constraints>
-                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0L-RF-nh5" userLabel="ViewPrepare">
-                                        <rect key="frame" x="6" y="150" width="343" height="60"/>
+                                        <rect key="frame" x="6" y="10" width="343" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время подготовки" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAR-6x-R7P">
                                                 <rect key="frame" x="10" y="10" width="153" height="41"/>
@@ -199,6 +49,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnPrepareRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqm-rj-7bt"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ju-3N-c8I"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfr-kb-bb5">
@@ -229,6 +80,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnPrepareAddClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sga-cx-K9P"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzb-O8-6T7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -244,6 +96,160 @@
                                             <constraint firstItem="4Pd-9o-c00" firstAttribute="centerY" secondItem="R0L-RF-nh5" secondAttribute="centerY" id="ePl-0E-wWV"/>
                                             <constraint firstAttribute="height" constant="60" id="nxh-UU-9P8"/>
                                             <constraint firstItem="tfr-kb-bb5" firstAttribute="leading" secondItem="4Pd-9o-c00" secondAttribute="trailing" constant="10" id="x4w-Jx-loi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj4-ww-PGu" userLabel="ViewRound">
+                                        <rect key="frame" x="6" y="80" width="343" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время раунда" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-52-7cF">
+                                                <rect key="frame" x="10" y="20.5" width="153" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-gM-8E2" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                                <rect key="frame" x="173" y="10" width="40" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Vht-At-Ept"/>
+                                                    <constraint firstAttribute="height" constant="40" id="mII-N6-9m6"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="minus"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnRoundRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZH-fO-IYy"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKU-Nk-10p"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg0-A6-j20">
+                                                <rect key="frame" x="223" y="20.5" width="60" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="1vc-f3-HEE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNg-aV-uoh" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                                <rect key="frame" x="293" y="10" width="40" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="r2f-uC-G4N"/>
+                                                    <constraint firstAttribute="height" constant="40" id="xWx-F6-13g"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="plus"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnRoundAddClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0i-df-Uz4"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79H-RN-YfX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="PEU-52-7cF" firstAttribute="centerY" secondItem="yj4-ww-PGu" secondAttribute="centerY" id="2lf-Fx-qTa"/>
+                                            <constraint firstItem="dNg-aV-uoh" firstAttribute="leading" secondItem="Jg0-A6-j20" secondAttribute="trailing" constant="10" id="AEC-29-3A8"/>
+                                            <constraint firstItem="Li8-gM-8E2" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="CDN-Ts-xSy"/>
+                                            <constraint firstItem="PEU-52-7cF" firstAttribute="leading" secondItem="yj4-ww-PGu" secondAttribute="leading" constant="10" id="Ejt-2R-JYl"/>
+                                            <constraint firstAttribute="trailing" secondItem="dNg-aV-uoh" secondAttribute="trailing" constant="10" id="IeA-Sc-BFC"/>
+                                            <constraint firstItem="Jg0-A6-j20" firstAttribute="leading" secondItem="Li8-gM-8E2" secondAttribute="trailing" constant="10" id="Tmd-Of-8El"/>
+                                            <constraint firstItem="Jg0-A6-j20" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="Upz-gw-A11"/>
+                                            <constraint firstItem="dNg-aV-uoh" firstAttribute="centerY" secondItem="PEU-52-7cF" secondAttribute="centerY" id="WFu-Bm-e8n"/>
+                                            <constraint firstItem="Li8-gM-8E2" firstAttribute="leading" secondItem="PEU-52-7cF" secondAttribute="trailing" constant="10" id="qdJ-EG-SJg"/>
+                                            <constraint firstAttribute="height" constant="60" id="w1l-ff-sFy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQr-c2-pBH" userLabel="ViewPause">
+                                        <rect key="frame" x="6" y="150" width="343" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время отдыха" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKJ-f2-Ozo">
+                                                <rect key="frame" x="10" y="20.5" width="153" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-9N-RUl" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                                <rect key="frame" x="173" y="10" width="40" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Rh3-LN-M4w"/>
+                                                    <constraint firstAttribute="height" constant="40" id="a9P-1G-qqO"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="-" image="minus"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnPauseRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epC-61-A0q"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ur8-Nl-kbu"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO3-Ny-j2g">
+                                                <rect key="frame" x="223" y="20.5" width="60" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="mXu-cO-Qad"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dw-Gr-VOh" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
+                                                <rect key="frame" x="293" y="10" width="40" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="EuS-K6-mIR"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Yo0-T6-9JN"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="+" image="plus"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnPauseAddClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXl-7O-6TF"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSu-BY-s3p"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2Dw-Gr-VOh" firstAttribute="leading" secondItem="lO3-Ny-j2g" secondAttribute="trailing" constant="10" id="1W3-Cf-32X"/>
+                                            <constraint firstItem="lO3-Ny-j2g" firstAttribute="centerY" secondItem="TQr-c2-pBH" secondAttribute="centerY" id="DLN-jy-p1i"/>
+                                            <constraint firstItem="NQ6-9N-RUl" firstAttribute="leading" secondItem="mKJ-f2-Ozo" secondAttribute="trailing" constant="10" id="GBX-af-aZP"/>
+                                            <constraint firstItem="mKJ-f2-Ozo" firstAttribute="centerY" secondItem="TQr-c2-pBH" secondAttribute="centerY" id="Gda-yI-E7Q"/>
+                                            <constraint firstItem="lO3-Ny-j2g" firstAttribute="leading" secondItem="NQ6-9N-RUl" secondAttribute="trailing" constant="10" id="JwQ-5O-zkN"/>
+                                            <constraint firstItem="NQ6-9N-RUl" firstAttribute="centerY" secondItem="TQr-c2-pBH" secondAttribute="centerY" id="U2g-f8-H7z"/>
+                                            <constraint firstAttribute="height" constant="60" id="iI1-yC-bZ1"/>
+                                            <constraint firstItem="mKJ-f2-Ozo" firstAttribute="leading" secondItem="TQr-c2-pBH" secondAttribute="leading" constant="10" id="spE-sL-RB4"/>
+                                            <constraint firstItem="2Dw-Gr-VOh" firstAttribute="centerY" secondItem="TQr-c2-pBH" secondAttribute="centerY" id="uhP-5Q-jPr"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Dw-Gr-VOh" secondAttribute="trailing" constant="10" id="vbf-8e-Jxm"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-XP-hO0" userLabel="ViewCount">
@@ -274,6 +280,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnCountRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQS-yH-63h"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yhe-uQ-HdE"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olY-Lk-XQN">
@@ -304,6 +311,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnCountAddClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8k3-ok-PWx"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tb3-XQ-GFU"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -324,7 +332,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puw-zm-bca" userLabel="ViewAlert">
                                         <rect key="frame" x="6" y="290" width="343" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Доп. сигнал" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRy-R2-11K">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Время &quot;Взрыва&quot;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRy-R2-11K">
                                                 <rect key="frame" x="10" y="20.5" width="153" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -349,6 +357,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnAlertRemoveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nk-cA-diB"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6jt-VF-tra"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-6W-xie">
@@ -379,6 +388,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnAlertAddClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r8H-6L-gFH"/>
+                                                    <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6fd-nG-IB6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -415,6 +425,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="btnSaveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEH-VP-zbM"/>
+                                            <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="fjh-2k-5ok"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIy-3E-5fV" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
@@ -436,17 +447,18 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="btnStartClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Qt-8J-gOK"/>
+                                            <action selector="btnTouchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3e-P3-WHm"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="RpT-hy-wlB" firstAttribute="centerY" secondItem="CIy-3E-5fV" secondAttribute="centerY" id="2at-ht-LHb"/>
+                                    <constraint firstItem="yj4-ww-PGu" firstAttribute="top" secondItem="R0L-RF-nh5" secondAttribute="bottom" constant="10" id="CtA-3v-4uD"/>
                                     <constraint firstItem="puw-zm-bca" firstAttribute="top" secondItem="0bt-XP-hO0" secondAttribute="bottom" constant="10" id="GR5-2L-Pej"/>
+                                    <constraint firstItem="R0L-RF-nh5" firstAttribute="top" secondItem="yWY-wD-ZtN" secondAttribute="top" constant="10" id="JKF-Vb-w9j"/>
                                     <constraint firstItem="CIy-3E-5fV" firstAttribute="top" secondItem="puw-zm-bca" secondAttribute="bottom" constant="20" id="NXN-Ai-HaN"/>
-                                    <constraint firstItem="yj4-ww-PGu" firstAttribute="top" secondItem="yWY-wD-ZtN" secondAttribute="top" constant="10" id="THf-RE-cQF"/>
-                                    <constraint firstItem="R0L-RF-nh5" firstAttribute="top" secondItem="TQr-c2-pBH" secondAttribute="bottom" constant="10" id="dDJ-Ew-PwW"/>
-                                    <constraint firstItem="0bt-XP-hO0" firstAttribute="top" secondItem="R0L-RF-nh5" secondAttribute="bottom" constant="10" id="fL3-5x-nom"/>
+                                    <constraint firstItem="0bt-XP-hO0" firstAttribute="top" secondItem="TQr-c2-pBH" secondAttribute="bottom" constant="10" id="Z0b-iy-3Cu"/>
                                     <constraint firstItem="TQr-c2-pBH" firstAttribute="top" secondItem="yj4-ww-PGu" secondAttribute="bottom" constant="10" id="gPD-y9-QbT"/>
                                     <constraint firstAttribute="bottom" secondItem="CIy-3E-5fV" secondAttribute="bottom" constant="10" id="haO-mM-CN7"/>
                                     <constraint firstItem="RpT-hy-wlB" firstAttribute="centerX" secondItem="yWY-wD-ZtN" secondAttribute="centerX" multiplier="1:2" id="juJ-EG-w4X"/>
@@ -650,6 +662,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnStartClicked:" destination="5Uh-cF-NIk" eventType="touchUpInside" id="0nd-Jb-IWz"/>
+                                    <action selector="btnTouchClicked:" destination="5Uh-cF-NIk" eventType="touchUpInside" id="oHo-WZ-DyA"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0F-dW-cLg" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
@@ -671,6 +684,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnPauseClicked:" destination="5Uh-cF-NIk" eventType="touchUpInside" id="0f1-EC-VdM"/>
+                                    <action selector="btnTouchClicked:" destination="5Uh-cF-NIk" eventType="touchUpInside" id="8A0-aJ-FX3"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-7B-Vg9" customClass="CustomButton" customModule="Boxer_Timer" customModuleProvider="target">
@@ -692,6 +706,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnStopClicked:" destination="5Uh-cF-NIk" eventType="touchUpInside" id="vCd-HZ-tXT"/>
+                                    <action selector="btnTouchClicked:" destination="5Uh-cF-NIk" eventType="touchUpInside" id="uzK-4R-H7v"/>
                                 </connections>
                             </button>
                         </subviews>
