@@ -22,7 +22,6 @@ class TimerViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
         presenter.activateProximitySensor()
     }
     

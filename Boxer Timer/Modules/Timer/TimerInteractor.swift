@@ -53,7 +53,7 @@ class TimerInteractor: TimerInteractorProtocol {
         do {
             audioPlayerStart = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "gong", ofType: "wav")!))
             audioPlayerEnd = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "gong_end", ofType: "mp3")!))
-            audioPlayerPrepare = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "prepare", ofType: "wav")!))
+            audioPlayerPrepare = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "alert", ofType: "mp3")!))
         } catch {
             isPlayerWork = false
         }

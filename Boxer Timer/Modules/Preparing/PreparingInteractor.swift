@@ -6,6 +6,7 @@
 //  Copyright © 2018 Марат Нургалиев. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 class PreparingInteractor: PreparingInteractorProtocol {
@@ -15,10 +16,15 @@ class PreparingInteractor: PreparingInteractorProtocol {
     
     let storageService: StorageServiceProtocol = StorageService()
     
+    let device = UIDevice.current
+    
     
     required init(presenter: PreparingPresenterProtocol) {
         self.presenter = presenter
     }
+    
+    
+    
     
     
     func getSavedTimer() {
@@ -133,5 +139,10 @@ class PreparingInteractor: PreparingInteractorProtocol {
         return minutes + ":" + seconds
     }
     
+    
+    func deactivateProximitySensor() {
+        device.isProximityMonitoringEnabled = false
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device)
+    }
     
 }

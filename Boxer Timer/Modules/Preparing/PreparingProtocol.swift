@@ -22,6 +22,7 @@ protocol PreparingPresenterProtocol: class {
     var router: PreparingRouterProtocol! { set get }
     
     // Мои функции
+    func deactivateProximitySensor()
     func getSavedTimer()
     func saveTimer()
     
@@ -46,6 +47,7 @@ protocol PreparingPresenterProtocol: class {
 
 protocol PreparingInteractorProtocol: class {
     
+    func deactivateProximitySensor()
     func getSavedTimer()
     func saveTimer()
     

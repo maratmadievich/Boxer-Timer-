@@ -25,6 +25,10 @@ class PreparingViewController: UIViewController {
     var presenter: PreparingPresenterProtocol!
     let configurator: PreparingConfiguratorProtocol = PreparingConfigurator()
 
+    override func viewWillAppear(_ animated: Bool) {
+       presenter.deactivateProximitySensor()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

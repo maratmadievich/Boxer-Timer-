@@ -21,6 +21,10 @@ class PreparingPresenter: PreparingPresenterProtocol {
     }
     
     
+    func deactivateProximitySensor() {
+        interactor.deactivateProximitySensor()
+    }
+    
     func getSavedTimer() {
         interactor.getSavedTimer()
     }
